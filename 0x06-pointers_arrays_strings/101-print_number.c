@@ -2,7 +2,8 @@
 
 /**
  * print_number - Prints any integer with putchar
- * @n: Number to print
+ * @n: Number to prints
+ * stahnobi
  * Return: Nothing
  */
 void print_number(int n)
@@ -14,11 +15,8 @@ void print_number(int n)
 		_putchar('_');
 		n *= -1;
 	}
-
 	x = n;
-
 	if (x / 10)
 		print_number(x / 10);
-
 	_putchar(x % 10 + '0');
 }
